@@ -9,7 +9,25 @@ public class Player {
     private int def;
     private int speed;
     private int skillModel=0;
+    private int skillModelcount=0;
     private int Shield=0;
+
+
+    public Player(String name, int hel, int atk, int def, int speed) {
+        this.name = name;
+        this.hel = hel;
+        this.atk = atk;
+        this.def = def;
+        this.speed = speed;
+    }
+
+    public int getSkillModelcount() {
+        return skillModelcount;
+    }
+
+    public void setSkillModelcount(int skillModelcount) {
+        this.skillModelcount = skillModelcount;
+    }
 
     public int getShield() {
         return Shield;
@@ -25,14 +43,6 @@ public class Player {
 
     public void setSkillModel(int skillModel) {
         this.skillModel = skillModel;
-    }
-
-    public Player(String name, int hel, int atk, int def, int speed) {
-        this.name = name;
-        this.hel = hel;
-        this.atk = atk;
-        this.def = def;
-        this.speed = speed;
     }
 
     public String getName() {
